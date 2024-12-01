@@ -4,13 +4,13 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(requests):
-    return HttpResponse('<h2>Home</h2>')
+    return HttpResponse(requests, 'base/home.html')
 
 def posts(requests):
-    return HttpResponse('<h2>Posts</h2>')
+    return HttpResponse(requests, 'base/posts.html')
 
 def post(requests):
-    return HttpResponse('<h2>Post title</h2>')
+    return HttpResponse(requests, 'base/post.html')
 
 def profile(requests):
-    return HttpResponse('<h2>User profile</h2>')
+    return HttpResponse(requests, 'base/profile.html')
